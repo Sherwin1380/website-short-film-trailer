@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/venecos-clone",
+            "outputPath": "dist/short-film-website",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,12 +27,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
                 "src/assets/images",
-                "src/assets"
+                "src/assets",
+                "src/assets/_redirects"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/",
+            "deployUrl": "/"
           },
           "configurations": {
             "production": {
@@ -84,7 +87,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
                 "src/assets/images",
-                "src/assets"
+                "src/assets",
+                "src/assets/_redirects"
             ],
             "styles": [
               "src/styles.scss"

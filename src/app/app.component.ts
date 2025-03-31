@@ -12,5 +12,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'venecos-clone';
+  title = 'The Tender Ones Will Triumph';
 }
