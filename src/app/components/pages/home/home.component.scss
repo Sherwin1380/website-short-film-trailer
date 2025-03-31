@@ -1,132 +1,106 @@
+/* Home Component Styles */
 .hero {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 100vh; /* Ensure it covers full viewport */
-  justify-content: space-between;
-  align-items: stretch;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .block {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px; /* Ensures all blocks are the same height */
+  min-height: 600px;
   height: auto;
+  padding: 20px;
+  text-align: center;
+  width:100%;
 }
 
 .block1 {
   background-image: url('/assets/images/trailer-background.jpg');
   background-size: cover;
   background-position: center;
-  padding: 20px;
+  justify-content: center;
+}
+
+.block2 {
+  background-image: url('/assets/images/synopsis2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.block3 {
+  background-image: url('/assets/images/filmwork.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .block4 {
-  display: grid;
-  flex-direction: row; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
   background-image: url('/assets/images/cast.jpg');
   background-size: cover;
   background-position: center;
-  padding: 20px;
-  gap: 20px; /* Space between child elements */
-}
-
-
-.block2 {
-  flex-direction: row; /* Stack items vertically */
-  justify-content: left; /* Center items vertically */
-  background-image: url('/assets/images/synopsis2.jpg');
-  background-size:cover;
-  padding: 20px;
-  gap: 20px; /* Space between child elements */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .overlay {
   display: flex;
-  flex-direction: row; /* Stack elements */
-  align-items: center;
-  gap: inherit;
-  background-color: black;
-}
-
-.overlay2 {
-  display: flex;
-  flex-direction: row; /* Stack elements */
-  align-items: center;
-  gap: inherit;
-}
-
-.award-logo {
-  width: 100px;
-  margin-bottom: 20px;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Ensure text aligns to the left */
+  padding: 20px;
+  gap: 20px;
+  justify-content: flex-start; /* Align content to the top */
+  width: 50%; /* Optional: Set width to control size */
 }
 
 .info-box {
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 20px;
-  max-width: 500px;
-  margin: 10px;
-  text-align: left;
+  padding: 30px; /* Increase padding for more spacing inside */
+  max-width: 700px; /* Increase the maximum width */
+  margin: 20px auto; /* Center it and add more spacing around */
+  font-size: 1.2rem; /* Optional: Increase font size for better readability */
+  border-radius: 10px; /* Optional: Add rounded corners */
 }
 
-p
-{
-  color: white;
-  font-size: 15px;
-  font-family: 'Saira Extra Condensed',Helvetica,Arial,Lucida,sans-serif;
-}
-
-.overlay img {
-  width: 200px;  /* Set image width */
-  height: auto;  /* Maintain aspect ratio */
-  max-height: 250px; /* Set max height */
-  object-fit: contain; /* Ensure it scales properly */
-  margin-bottom: 20px;
-}
-
-.block3 {
-  position: relative;
-  background-image: url('/assets/images/filmwork.jpg'); /* Background Image */
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh; /* Takes full screen height */
+.overlay2 {
   display: flex;
-  align-items: flex-end; /* Ensures content is at the bottom */
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  gap: 20px;
+  justify-content: left;
 }
 
 .overlay3 {
   display: flex;
-  flex-direction: row; /* Arrange boxes in a row */
-  justify-content: space-around;
-  width: 100%;
   flex-wrap: wrap;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: left;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  position: absolute;
 }
 
-.info-box3 { /* Semi-transparent black */
+.info-box3 {
   color: white;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
   min-width: 300px;
   text-align: left;
-  padding-bottom: 100px;
-  padding-left: 20px;
-
 }
 
-.highlight {
-  color: #c8a22b; /* Gold color */
-  font-weight: bold;
-}
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -135,13 +109,57 @@ p
   .block {
     flex-direction: column;
     text-align: center;
+    min-height: auto;
+    height: auto;
   }
 
-  .overlay2, .overlay3 {
+  .block1 {
+    min-height: 300px; /* Set a reasonable minimum height for the block */
+    height: auto; /* Allow the height to adjust based on content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add some padding for spacing */
+  }
+
+  .block1 iframe {
+    width: 90%; /* Reduce the iframe width to 90% of the block */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit the iframe height for smaller screens */
+    position: relative; /* Remove absolute positioning for better responsiveness */
+  }
+
+  .overlay{
+    position: static; /* Allow it to flow naturally */
+    flex-direction: column; /* Stack content vertically */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 20px;
+  }
+
+  .overlay2{
     flex-direction: column;
+  }
+
+  .overlay3 {
+    position: static; /* Allow it to flow naturally */
+    flex-direction: column; /* Stack content vertically */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 20px;
   }
 
   .info-box3 {
     width: 100%;
   }
+}
+
+.highlight
+{
+  color: #c8a22b; /* Gold color */
+  font-weight: bold;
+}
+
+.block1 iframe {
+  position: absolute;
+  width: 80%; /* Make the iframe 90% of the block */
+  height: 80%; /* Maintain the height as 90% */
 }

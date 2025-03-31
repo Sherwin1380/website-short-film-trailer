@@ -1,15 +1,21 @@
 <div class="head">
   <header>
     <div class="logo">
-      <h2>The Tender Ones Will Triumph</h2>
-      <h3>a film by Francisco Bassignana </h3>
+      <img src="/assets/images/title_movie.png" alt="Krakovia Producciones">
     </div>
     <nav>
       <ul>
-        <li><a href="#trailer">TRAILER</a></li>
-        <li><a href="#synopsis">SYNOPSIS</a></li>
-        <li><a href="#filmwork">FILM WORK</a></li>
+          <li><a href="#trailer">TRAILER</a></li>
+          <li><a href="#synopsis">SYNOPSIS</a></li>
+          <li><a href="#filmwork">FILM WORK</a></li>
       </ul>
     </nav>
-  </header>
+
+    <div class="burger-menu" (click)="toggleMenu()">&#9776;</div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#trailer" (click)="closeMenu()">TRAILER</a>
+        <a href="#synopsis" (click)="closeMenu()">SYNOPSIS</a>
+        <a href="#filmwork" (click)="closeMenu()">FILM WORK</a>
+    </div>
+    </header>
 </div>

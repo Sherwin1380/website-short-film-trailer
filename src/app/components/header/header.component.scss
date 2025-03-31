@@ -43,10 +43,46 @@ nav ul li a:hover {
   color: #c8a22b;
 }
 
-.logo{
-  h3
-  {
-    color: white;
+.logo img{
+  max-width: 60%;
+  height: 90%;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: black;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.mobile-nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.mobile-nav a:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  nav {
+      display: none;
   }
-  color: #c8a22b;
+  .burger-menu {
+      display: block;
+      color: white;
+  }
 }
