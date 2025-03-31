@@ -1,0 +1,44 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  position:relative;
+  width: 100%;
+  justify-content: right;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px; /* Adjust logo size */
+}
+
+.icon {
+  height: 24px; /* Adjust icon size */
+}
+
+.contact-info p {
+  margin: 2px 0;
+}
+
+.logo
+{
+  height: 100px;
+  width: 200px;
+}

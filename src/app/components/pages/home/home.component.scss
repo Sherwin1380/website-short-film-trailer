@@ -1,0 +1,128 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh; /* Ensure it covers full viewport */
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.block {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px; /* Ensures all blocks are the same height */
+  height: auto;
+}
+
+.block1 {
+  background-image: url('/assets/images/trailer-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.block4 {
+  display: grid;
+  flex-direction: row; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  background-image: url('/assets/images/cast.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  gap: 20px; /* Space between child elements */
+}
+
+
+.block2 {
+  flex-direction: row; /* Stack items vertically */
+  justify-content: left; /* Center items vertically */
+  background-image: url('/assets/images/synopsis2.jpg');
+  background-size:cover;
+  padding: 20px;
+  gap: 20px; /* Space between child elements */
+}
+
+.overlay {
+  display: flex;
+  flex-direction: row; /* Stack elements */
+  align-items: center;
+  gap: inherit;
+  background-color: black;
+}
+
+.overlay2 {
+  display: flex;
+  flex-direction: row; /* Stack elements */
+  align-items: center;
+  gap: inherit;
+}
+
+.award-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: 10px;
+  text-align: left;
+}
+
+p
+{
+  color: white;
+  font-size: 15px;
+  font-family: 'Saira Extra Condensed',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.overlay img {
+  width: 200px;  /* Set image width */
+  height: auto;  /* Maintain aspect ratio */
+  max-height: 250px; /* Set max height */
+  object-fit: contain; /* Ensure it scales properly */
+  margin-bottom: 20px;
+}
+
+.block3 {
+  position: relative;
+  background-image: url('/assets/images/filmwork.jpg'); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Takes full screen height */
+  display: flex;
+  align-items: flex-end; /* Ensures content is at the bottom */
+  justify-content: center;
+}
+
+.overlay3 {
+  display: flex;
+  flex-direction: row; /* Arrange boxes in a row */
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+}
+
+.info-box3 { /* Semi-transparent black */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  padding-bottom: 100px;
+  padding-left: 20px;
+
+}
+
+.highlight {
+  color: #c8a22b; /* Gold color */
+  font-weight: bold;
+}
