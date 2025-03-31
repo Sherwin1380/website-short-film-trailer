@@ -1,6 +1,6 @@
 .head {
   width: 100%;
-  height: 80px; /* Adjust height as needed */
+  height: 80px;
   background: black;
   position: fixed;
   top: 0;
@@ -21,32 +21,32 @@ header {
   margin: 0 auto;
 }
 
-.logo{
-  h3
-  {
-    color: white;
-  }
-  color: #c8a22b;
-}
-
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
   padding: 0;
   margin: 0;
+}
 
-  li a {
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #c8a22b;
+}
+
+.logo{
+  h3
+  {
     color: white;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-    font-family: 'Bebas Neue', sans-serif;
-    cursor: pointer;
-
-    &:hover {
-      color: #c8a22b;
-    }
   }
+  color: #c8a22b;
 }

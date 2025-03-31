@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh; /* Ensure it covers full viewport */
   justify-content: space-between;
   align-items: stretch;
@@ -125,4 +125,23 @@ p
 .highlight {
   color: #c8a22b; /* Gold color */
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overlay2, .overlay3 {
+    flex-direction: column;
+  }
+
+  .info-box3 {
+    width: 100%;
+  }
 }
