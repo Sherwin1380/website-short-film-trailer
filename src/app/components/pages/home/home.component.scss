@@ -14,7 +14,6 @@
   display: flex;
   min-height: 600px;
   height: auto;
-  padding: 20px;
   text-align: center;
   width:100%;
 }
@@ -24,6 +23,7 @@
   background-size: cover;
   background-position: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .block2 {
@@ -33,6 +33,8 @@
 }
 
 .block3 {
+  width: 100%; /* Full width of the container */
+  height: 100%;
   background-image: url('/assets/images/filmwork.jpg');
   background-size: cover;
   background-position: center;
