@@ -26,6 +26,21 @@
   padding: 20px;
 }
 
+.block5 {
+  width: 100%;
+  height: auto;
+  min-height: 600px; /* Set a minimum height for the block */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .responsive-image {
+    width: 100%; /* Make the image take the full width of the block */
+    height: 100%; /* Make the image take the full height of the block */
+    object-fit: cover; /* Ensure the image covers the block without white spaces */
+  }
+}
+
 .block2 {
   background-image: url('/assets/images/synopsis2.jpg');
   background-size: cover;
@@ -58,7 +73,7 @@
   text-align: left; /* Ensure text aligns to the left */
   padding: 20px;
   gap: 20px;
-  justify-content: flex-start; /* Align content to the top */
+  justify-content: space-around; /* Align content to the top */
   width: 50%; /* Optional: Set width to control size */
 }
 
